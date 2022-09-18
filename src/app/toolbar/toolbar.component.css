@@ -1,0 +1,7 @@
+* {
+    color: #fff;
+}
+
+.nav-link, .navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+}
