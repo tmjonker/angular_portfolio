@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { GreetingComponent } from './greeting/greeting.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    GreetingComponent,
+    ProjectsComponent
   ],
   imports: [
   BrowserModule,

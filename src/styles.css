@@ -15,3 +15,10 @@ html {
 body {
   background-color: #444444;
 }
+
+hr {
+  width: 20%;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 40px;
+}

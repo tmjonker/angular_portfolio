@@ -1,0 +1,37 @@
+  .section-container {
+    margin-bottom: 75px;
+  }
+  
+  .about-me {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    text-align: justify;
+    text-indent: 40px;
+  }
+  
+  .hello {
+    border-radius: 0%;
+    display: block;
+    margin: auto;
+    padding: 40px 0 40px;
+    width: 50%;
+  }
+
+  hr {
+    width: 20%;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .first-paragraph {
+    padding-top: 40px;
+  }
+  
+  .about-me {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    text-indent: 40px;
+  }

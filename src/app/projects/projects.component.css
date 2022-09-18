@@ -1,0 +1,28 @@
+* {
+    color: #fff;
+}
+
+hr {
+  width: 20%;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+h4 {
+  text-align: center;
+}
+
+.project-img {
+  margin: auto;
+}
+
+.section-header {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section-container {
+    margin-bottom: 75px;
+  }
