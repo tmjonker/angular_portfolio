@@ -9,6 +9,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { GreetingComponent } from './greeting/greeting.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,15 @@ import { FooterComponent } from './footer/footer.component';
     JumbotronComponent,
     GreetingComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormComponent
   ],
   imports: [
   BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

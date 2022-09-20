@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="w-60 d-block">
+        <section id="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-container col-lg-4">
+                <h1 class="section-header">Contact Me</h1>
+                <hr>
+                <form [formGroup]="contactForm" (ngSubmit)="submitForm()" #form>
+                    <input id="name-input" class="form-control" type="text" placeholder="Your name" autocomplete="name" formControlName="fullName" [(ngModel)]="fullName">
+                    <br>
+                    <input id="email-input" class="form-control" type="text" placeholder="Your email address" autocomplete="email" formControlName="emailAddress" [(ngModel)]="emailAddress">
+                    <br>
+                    <textarea id="msg-textarea" class="form-control" placeholder="Your message" formControlName="message" [(ngModel)]="message"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-dark">Submit</button><button type="reset" class="btn btn-dark">Clear</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+</div>
