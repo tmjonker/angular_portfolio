@@ -40,8 +40,14 @@ export class ContactFormComponent implements OnInit {
         msg: this.message
       };
 
-      console.log(this.messageObject.email);
+      this.clearForm();
     }
+  }
+
+  clearForm() {
+    this.fullName = "";
+    this.emailAddress = "";
+    this.message = "";
   }
 }
 
