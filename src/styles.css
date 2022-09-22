@@ -16,3 +16,21 @@ body {
   background-color: #444444;
 }
 
+@media screen
+and (max-width : 850px) {
+  .project-img {
+    width: 80%;
+  }
+
+  .skill-img {
+    width: 30%;
+  }
+
+  .jumbotron {
+    height: 200px;
+  }
+
+  .jumbo-header {
+    margin-top: 28px;
+  }
+}

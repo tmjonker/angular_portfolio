@@ -1,5 +1,7 @@
+import { ContactService } from './../services/contact.service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { EmailMessage } from '../model/email-message';
 
 @Component({
   selector: 'app-contact-form',
@@ -9,22 +11,24 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class ContactFormComponent implements OnInit {
 
   contactForm!: FormGroup;
-  fullName!: string;
-  emailAddress!: string;
+  sender!: string;
+  subject!: string;
   message!: string;
-  messageObject!: Message;
+  messageObject!: EmailMessage;
+  contactService: ContactService
   
 
-  constructor() {
+  constructor(contactService: ContactService) {
     this.generateForm();
+    this.contactService = contactService;
   }
 
   ngOnInit(): void {}
 
   generateForm() {
     this.contactForm = new FormGroup({
-      fullName: new FormControl('', [Validators.required]),
-      emailAddress: new FormControl('', [Validators.required]),
+      sender: new FormControl('', [Validators.required]),
+      subject: new FormControl('', [Validators.required]),
       message: new FormControl('', [Validators.required]),
     });
 
@@ -35,25 +39,25 @@ export class ContactFormComponent implements OnInit {
     if (this.contactForm.valid) {
 
       this.messageObject = {
-        name: this.fullName,
-        email: this.emailAddress,
+        sender: this.sender,
+        subject: this.subject,
         msg: this.message
       };
+
+      this.contactService.sendMsg(this.messageObject)
 
       this.clearForm();
     }
   }
 
   clearForm() {
-    this.fullName = "";
-    this.emailAddress = "";
+    this.sender = "";
+    this.subject = "";
     this.message = "";
   }
 }
 
 interface Message {
 
-  name: string;
-  email: string;
-  msg: string;
+  
 }

@@ -1,0 +1,56 @@
+.section-header {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section-container {
+  margin-bottom: 75px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+hr {
+  width: 20%;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.resume-listing {
+  font-family: "Roboto", sans-serif;
+  padding: 30px 0;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #000;
+  padding: 20px;
+}
+
+li {
+  padding: 6px;
+}
+
+.resume-position {
+  font-weight: bold;
+}
+
+.resume-company {
+  font-size: 1.4rem;
+}
+
+.resume-date {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.fm {
+  width: 15%;
+  float: left;
+  margin-right: 30px;
+}
+
+.gs {
+  width: 15%;
+  float: right;
+  margin-right: 30px;
+}
