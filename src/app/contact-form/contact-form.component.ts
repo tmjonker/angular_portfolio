@@ -43,7 +43,6 @@ export class ContactFormComponent implements OnInit {
         subject: this.subject,
         msg: this.message
       };
-
       this.contactService.sendMsg(this.messageObject)
 
       this.clearForm();

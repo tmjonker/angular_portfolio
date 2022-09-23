@@ -33,4 +33,12 @@ and (max-width : 850px) {
   .jumbo-header {
     margin-top: 28px;
   }
+
+  .fm {
+    width: 70%;
+  }
+
+  .gs {
+    width: 70%;
+  }
 }
