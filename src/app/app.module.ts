@@ -14,6 +14,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
+import { SectionHeaderComponent } from './section-header/section-header.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ResumeComponent } from './resume/resume.component';
     FooterComponent,
     ContactFormComponent,
     SkillsComponent,
-    ResumeComponent
+    ResumeComponent,
+    SectionHeaderComponent
   ],
   imports: [
   BrowserModule,

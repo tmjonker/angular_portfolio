@@ -1,20 +1,7 @@
-.section-header {
-  color: #fff;
-  text-align: center;
-  margin: 20px 0;
-}
-
 .section-container {
   margin-bottom: 75px;
   background-color: #fff;
   border-radius: 4px;
-}
-
-hr {
-  width: 20%;
-  margin: auto;
-  background-color: #fff;
-  margin-bottom: 40px;
 }
 
 .resume-listing {
@@ -44,13 +31,25 @@ li {
 }
 
 .fm {
-  width: 15%;
+  width: 30%;
   float: left;
   margin-right: 30px;
 }
 
 .gs {
-  width: 15%;
+  width: 26%;
   float: right;
   margin-right: 30px;
+}
+
+@media screen
+and (max-width : 850px) {
+
+  .fm {
+    width: 50%;
+  }
+
+  .gs {
+    width: 46%;
+  }
 }

@@ -1,9 +1,8 @@
 <section id="projects">
   <div class="container">
+    <app-section-header [headerTitle]="sectionHeader"></app-section-header>
     <div class="row">
       <div class="container section-container">
-        <h1 class="section-header">Projects</h1>
-        <hr />
         <ngb-carousel class="carousel" *ngIf="images">
           <ng-template ngbSlide>
             <h4>Password Manager</h4>

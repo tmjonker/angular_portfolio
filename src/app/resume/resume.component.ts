@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  sectionHeader!: string;
+
+  constructor() { 
+    this.sectionHeader = "Work Experience"
+  }
 
   ngOnInit(): void {
   }

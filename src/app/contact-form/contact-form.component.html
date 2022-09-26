@@ -1,12 +1,11 @@
 <div class="container">
+  <app-section-header [headerTitle]="sectionHeader"></app-section-header>
     <div class="row">
       <div class="w-60 d-block">
         <section id="contact">
           <div class="container">
             <div class="row">
               <div class="section-container col-lg-4">
-                <h1 class="section-header">Contact Me</h1>
-                <hr>
                 <form [formGroup]="contactForm" (ngSubmit)="submitForm()" #form>
                     <input id="email-input" class="form-control" type="text" placeholder="Your email address" autocomplete="email" formControlName="sender" [(ngModel)]="sender">
                     <br>

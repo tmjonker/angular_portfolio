@@ -15,12 +15,14 @@ export class ContactFormComponent implements OnInit {
   subject!: string;
   message!: string;
   messageObject!: EmailMessage;
-  contactService: ContactService
+  contactService: ContactService;
+  sectionHeader!: string;
   
 
   constructor(contactService: ContactService) {
     this.generateForm();
     this.contactService = contactService;
+    this.sectionHeader = "Contact Me";
   }
 
   ngOnInit(): void {}

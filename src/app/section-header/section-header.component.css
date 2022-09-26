@@ -1,0 +1,16 @@
+* {
+  color: #fff;
+}
+
+hr {
+  width: 20%;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.section-header {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
