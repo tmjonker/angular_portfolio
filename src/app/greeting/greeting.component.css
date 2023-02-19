@@ -7,11 +7,11 @@
 }
 
 .about-me {
-  text-align: center;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   text-align: justify;
-  text-indent: 40px;
+  color: #fff;
+  padding: 0px 20px;
 }
 
 .hello {
@@ -29,13 +29,9 @@ hr {
   margin-bottom: 40px;
 }
 
-.first-paragraph {
-  padding-top: 40px;
-}
-
-.about-me {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  text-indent: 40px;
+@media screen
+and (max-width : 850px) {
+  .hello {
+    width: 65%;
+  }
 }

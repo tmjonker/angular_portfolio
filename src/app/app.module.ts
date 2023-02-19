@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -27,18 +28,17 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
     ContactFormComponent,
     SkillsComponent,
     ResumeComponent,
-    SectionHeaderComponent
+    SectionHeaderComponent,
   ],
   imports: [
-  BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgChartsModule
   ],
-  providers: [
-    ContactService
-  ],
-  bootstrap: [AppComponent]
+  providers: [ContactService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

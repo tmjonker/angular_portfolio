@@ -3,29 +3,18 @@
 }
 
 .skills-container {
-  text-align: center;
-}
-
-.react {
-  width: 30%;
-}
-
-.skill-row {
-  margin-top: 30px;
-}
-.java {
-  width: 45%;
-  margin-right: 100px;
-}
-
-.html {
-  width: 60%;
-}
-
-.spring {
-  width: 28%;
+  display: block;
+  margin: auto;
+  width: 40%
 }
 
 .section-container {
   margin-bottom: 75px;
+}
+
+@media screen
+and (max-width : 850px) {
+  .skills-container {
+    width: 85%;
+  }
 }

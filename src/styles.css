@@ -22,10 +22,6 @@ and (max-width : 850px) {
     width: 80%;
   }
 
-  .skill-img {
-    width: 30%;
-  }
-
   .jumbotron {
     height: 200px;
   }
