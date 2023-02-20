@@ -1,8 +1,9 @@
 .section-container {
-  margin-bottom: 75px;
+  margin: 0 auto 75px;
   background-color: #fff;
   border-radius: 4px;
   padding: 0 20px;
+  width: 68%
 }
 
 .resume-listing {
@@ -63,15 +64,22 @@ li {
   margin-right: 30px;
 }
 
+li {
+  list-style-type:circle;
+  list-style-position: outside;
+}
+
 @media screen and (max-width: 850px) {
   .fm {
-    width: 47%;
+    width: 56%;
     float: right;
+    margin-right: 0;
   }
 
   .gs {
-    width: 41%;
+    width: 48%;
     float: right;
+    margin-right: 0;
   }
 
   .resume-block {
@@ -80,5 +88,9 @@ li {
   
   .resume-block-gs {
     float: none;
+  }
+
+  .section-container {
+    width: 90%;
   }
 }

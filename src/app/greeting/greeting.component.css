@@ -3,15 +3,21 @@
 }
 
 .section-container {
-  margin-bottom: 75px;
+  margin-bottom: 55px;
+  
 }
 
 .about-me {
+  display: block;
+  margin: 0 auto 20px auto;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
-  text-align: justify;
+  text-align: center;
   color: #fff;
-  padding: 0px 20px;
+  border-radius: 4px;
+  padding: 20px;
+  border: 5px solid rgba(255,255,255,.55);
+  width: 50%;
 }
 
 .hello {
@@ -33,5 +39,9 @@ hr {
 and (max-width : 850px) {
   .hello {
     width: 65%;
+  }
+
+  .about-me {
+    width: 100%;
   }
 }
