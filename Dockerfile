@@ -2,11 +2,11 @@
 FROM node:18.10 as node
 WORKDIR /app
 COPY . .
-RUN npm install @angular/cli -g
 RUN npm install
-CMD ["ng", "build"]
+RUN npm run build --prod
+RUN ls -a
 
 #Stage 2
 FROM nginx:alpine
-COPY --from=node /app/dist/angular_portfolio9 /usr/share/nginx/html
+COPY --from=node /app/ng-project/dist /usr/share/nginx/html
 EXPOSE 80
