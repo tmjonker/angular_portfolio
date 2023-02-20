@@ -1,5 +1,6 @@
 # Stage 1
 FROM node:18.10 as node
+RUN DEBIAN_FRONTEND=noninteractive
 WORKDIR /app
 COPY . .
 RUN npm install @angular/cli -g
