@@ -5,7 +5,8 @@
 .skills-container {
   display: block;
   margin: auto;
-  width: 40%
+  width: 40%;
+  padding: 0 20px;
 }
 
 .section-container {
