@@ -19,11 +19,11 @@
   @media screen and (max-width: 850px) {
     .jumbo-header {
       width: 75%;
-      margin-top: 100px;
+      margin-top: 75px;
     }
 
     .jumbotron {
-      height: 270px;
-      margin-top: 20px;
+      height: 250px;
+      margin-top: 50px;
     }
   }
