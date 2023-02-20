@@ -31,26 +31,54 @@ li {
   font-style: italic;
 }
 
-.gs {
-  width: 26%;
+.resume-block {
   float: right;
   margin-right: 30px;
+}
+
+.resume-block-gs {
+  float: left;
+  margin-right: 30px;
+}
+
+.bp-block {
+  float: left;
+
+}
+
+.bp-block-gs {
+  float: left;
 }
 
 .fm {
-  width: 29%;
+  display: flex;
+  width: 30%;
+  float: left;
+  margin-right: 30px;
+}
+
+.gs {
+  width: 25%;
   float: right;
   margin-right: 30px;
 }
 
-@media screen
-and (max-width : 850px) {
-
+@media screen and (max-width: 850px) {
   .fm {
-    width: 52%;
+    width: 47%;
+    float: right;
   }
 
   .gs {
-    width: 45%;
+    width: 41%;
+    float: right;
+  }
+
+  .resume-block {
+    float: none;
+  }
+  
+  .resume-block-gs {
+    float: none;
   }
 }
