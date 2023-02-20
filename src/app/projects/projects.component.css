@@ -13,3 +13,11 @@ h4 {
 .section-container {
     margin-bottom: 75px;
   }
+
+  @media screen
+and (max-width : 850px) {
+
+  .project-img {
+    width: 70%;
+  }
+}

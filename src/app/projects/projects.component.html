@@ -3,7 +3,11 @@
     <app-section-header [headerTitle]="sectionHeader"></app-section-header>
     <div class="row">
       <div class="container section-container">
-        <ngb-carousel class="carousel" *ngIf="images">
+        <ngb-carousel
+          class="carousel"
+          *ngIf="images"
+          [showNavigationIndicators]="false"
+        >
           <ng-template ngbSlide>
             <h4>Password Manager</h4>
             <a href="https://github.com/tmjonker/PasswordManager">

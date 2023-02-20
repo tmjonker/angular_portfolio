@@ -31,14 +31,14 @@ li {
   font-style: italic;
 }
 
-.fm {
-  width: 30%;
-  float: left;
+.gs {
+  width: 26%;
+  float: right;
   margin-right: 30px;
 }
 
-.gs {
-  width: 26%;
+.fm {
+  width: 29%;
   float: right;
   margin-right: 30px;
 }
@@ -47,10 +47,10 @@ li {
 and (max-width : 850px) {
 
   .fm {
-    width: 50%;
+    width: 52%;
   }
 
   .gs {
-    width: 46%;
+    width: 45%;
   }
 }
