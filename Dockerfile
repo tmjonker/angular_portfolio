@@ -2,9 +2,9 @@
 FROM node:18.10 as node
 WORKDIR /app
 COPY . .
+RUN npm install @angular/cli -g
 RUN npm install
-RUN npm run build
-RUN ls -a
+RUN ng build
 
 #Stage 2
 FROM nginx:alpine
