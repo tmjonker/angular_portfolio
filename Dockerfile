@@ -3,7 +3,7 @@ FROM node:18.10 as node
 WORKDIR /app
 COPY . .
 RUN npm install
-RUN npm run build --prod
+RUN npm run build
 RUN ls -a
 
 #Stage 2
