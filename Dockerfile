@@ -8,5 +8,5 @@ CMD ["ng", "build"]
 
 #Stage 2
 FROM nginx:alpine
-COPY --from=node /app/dist/angular-portfolio8/usr/share/nginx/html
+COPY --from=node /app/dist/angular_portfolio8/usr/share/nginx/html
 EXPOSE 80
