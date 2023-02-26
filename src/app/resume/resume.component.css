@@ -15,6 +15,26 @@
   padding: 20px;
 }
 
+p {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,.55);
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+button:hover {
+  color: rgba(255,255,255,.75);
+}
+
 li {
   padding: 6px;
 }

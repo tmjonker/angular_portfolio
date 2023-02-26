@@ -1,3 +1,4 @@
+import { DownloadService } from './../services/download.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,12 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
 
   sectionHeader!: string;
+  downloadService!: DownloadService;
 
-  constructor() { 
+  constructor(downloadService:DownloadService) { 
     this.sectionHeader = "Work Experience"
+    this.downloadService = downloadService;
   }
 
   ngOnInit(): void {
   }
 
+  async downloadResume() {
+    let url: string = await this.downloadService.downloadResume();
+
+    window.open(url, "_blank");
+  }
 }
