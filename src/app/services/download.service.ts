@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 
 declare var require: any;
@@ -7,7 +8,9 @@ const axios = require('axios').default;
   providedIn: 'root',
 })
 export class DownloadService {
-  constructor() {}
+  constructor() {
+    axios.defaults.headers.get['TMJonker'] = environment.apiKey;
+  }
 
   downloadResume(): Promise<string> {
     let url: string = '';
