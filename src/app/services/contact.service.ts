@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { EmailMessage } from '../model/email-message'
 
 declare var require: any;
@@ -10,7 +11,9 @@ const axios = require('axios').default;
 })
 export class ContactService {
 
-  constructor() { }
+  constructor() { 
+    axios.defaults.headers.get['TMJonker'] = environment.apiKey;
+  }
 
   sendMsg(emailMessage: EmailMessage) {
 
