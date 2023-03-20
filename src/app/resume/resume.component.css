@@ -4,13 +4,16 @@
   border-radius: 7px;
   padding: 0 20px;
   width: 68%;
-  box-shadow: 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+#resume {
+  scroll-margin-top: 75px;
+  margin-bottom: 100px;
 }
 
 .resume-listing {
   font-family: "Roboto", sans-serif;
   padding: 30px 0;
-  letter-spacing: 2px;
   text-align: left;
   color: #000;
   padding: 20px;
@@ -91,6 +94,7 @@ li {
 }
 
 @media screen and (max-width: 850px) {
+
   .fm {
     width: 56%;
     float: right;

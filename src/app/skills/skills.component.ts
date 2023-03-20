@@ -7,7 +7,14 @@ import { ChartConfiguration } from 'chart.js';
   styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent implements OnInit {
+  
   sectionHeader!: string;
+
+  constructor() {
+    this.sectionHeader = 'Skills';
+  }
+
+  ngOnInit(): void {}
 
   public doughnutChartLabels: string[] = [
     'Java',
@@ -47,10 +54,4 @@ export class SkillsComponent implements OnInit {
       }
     }
   };
-
-  constructor() {
-    this.sectionHeader = 'Skills';
-  }
-
-  ngOnInit(): void {}
 }

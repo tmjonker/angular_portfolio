@@ -2,6 +2,11 @@
   color: #fff;
 }
 
+#about {
+  scroll-margin-top: 15px;
+  margin-bottom: 120px;
+}
+
 .section-container {
   margin-bottom: 55px;
 }
@@ -10,15 +15,13 @@
   display: block;
   margin: 0 auto 20px auto;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  text-align: center;
+  text-align: justify;
   color: #fff;
   border-radius: 7px;
   padding: 20px;
   border: 5px solid rgba(255,255,255,.75);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   width: 68%;
-  text-shadow: 1px 1px 2px rgba(255,255,255,.55)
 }
 
 .hello {
@@ -39,7 +42,7 @@ hr {
 @media screen
 and (max-width : 850px) {
   .hello {
-    width: 65%;
+    width: 85%;
   }
 
   .about-me {

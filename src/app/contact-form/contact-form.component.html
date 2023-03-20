@@ -1,24 +1,46 @@
-<div class="container">
-  <app-section-header [headerTitle]="sectionHeader"></app-section-header>
+<section id="contact">
+  <div class="container">
+    <app-section-header [headerTitle]="sectionHeader"></app-section-header>
     <div class="row">
       <div class="w-60 d-block">
-        <section id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="section-container col-lg-4">
-                <form [formGroup]="contactForm" (ngSubmit)="submitForm()" #form>
-                    <input id="email-input" class="form-control" type="text" placeholder="Your email address" autocomplete="email" formControlName="sender" [(ngModel)]="sender">
-                    <br>
-                    <input id="subject-input" class="form-control" type="text" placeholder="Subject" formControlName="subject" [(ngModel)]="subject">
-                    <br>
-                    <textarea id="msg-textarea" class="form-control" placeholder="Your message" formControlName="message" [(ngModel)]="message"></textarea>
-                    <br>
-                    <button type="submit" class="btn btn-dark">Submit</button><button type="reset" class="btn btn-dark">Clear</button>
-                </form>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="section-container col-lg-4">
+              <form [formGroup]="contactForm" (ngSubmit)="submitForm()" #form>
+                <input
+                  id="email-input"
+                  class="form-control"
+                  type="text"
+                  placeholder="Your email address"
+                  autocomplete="email"
+                  formControlName="sender"
+                  [(ngModel)]="sender"
+                />
+                <br />
+                <input
+                  id="subject-input"
+                  class="form-control"
+                  type="text"
+                  placeholder="Subject"
+                  formControlName="subject"
+                  [(ngModel)]="subject"
+                />
+                <br />
+                <textarea
+                  id="msg-textarea"
+                  class="form-control"
+                  placeholder="Your message"
+                  formControlName="message"
+                  [(ngModel)]="message"
+                ></textarea>
+                <br />
+                <button type="submit" class="btn btn-dark">Submit</button
+                ><button type="reset" class="btn btn-dark">Clear</button>
+              </form>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
-</div>
+  </div>
+</section>

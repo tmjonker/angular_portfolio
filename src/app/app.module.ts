@@ -28,7 +28,7 @@ import { NgChartsModule } from 'ng2-charts';
     ContactFormComponent,
     SkillsComponent,
     ResumeComponent,
-    SectionHeaderComponent,
+    SectionHeaderComponent
   ],
   imports: [
     BrowserModule,

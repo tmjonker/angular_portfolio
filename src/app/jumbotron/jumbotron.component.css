@@ -1,3 +1,7 @@
+* {
+  letter-spacing: 2px;
+}
+
 .jumbotron {
     background-image: linear-gradient(transparent, #444444 95%), url("https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg");
     opacity: 0.8;

@@ -2,6 +2,13 @@
   color: #fff;
 }
 
+#skills {
+  scroll-margin-top: 75px;
+  margin-bottom: 160px;
+  transition: opacity;
+  opacity: 1;
+}
+
 .skills-container {
   display: block;
   margin: auto;
@@ -16,6 +23,6 @@
 @media screen
 and (max-width : 850px) {
   .skills-container {
-    width: 85%;
+    width: 100%;
   }
 }
