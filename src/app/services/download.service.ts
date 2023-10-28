@@ -9,7 +9,7 @@ const axios = require('axios').default;
 })
 export class DownloadService {
   constructor() {
-//     axios.defaults.headers.get['TMJonker'] = environment.apiKey;
+    axios.defaults.headers.get['TMJonker'] = environment.apiKey;
   }
 
   downloadResume(): Promise<string> {
