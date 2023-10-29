@@ -11,8 +11,8 @@ const axios = require('axios').default;
 })
 export class ContactService {
 
-  constructor() { 
-    axios.defaults.headers.get['TMJonker'] = environment.apiKey;
+  constructor() {
+//     axios.defaults.headers.get['TMJonker'] = environment.apiKey;
   }
 
   sendMsg(emailMessage: EmailMessage) {
